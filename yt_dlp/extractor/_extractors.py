@@ -2120,6 +2120,12 @@ from .umg import UMGDeIE
 from .unistra import UnistraIE
 from .unitednations import UnitedNationsWebTvIE
 from .unity import UnityIE
+from .unsplash import (
+    UnsplashCollectionIE,
+    UnsplashIE,
+    UnsplashImageIE,
+    UnsplashUserIE,
+)
 from .unsupported import (
     KnownDRMIE,
     KnownLiabilityIE,
