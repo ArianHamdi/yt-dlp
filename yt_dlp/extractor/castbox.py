@@ -98,7 +98,7 @@ class CastboxIE(CastboxBaseIE):
     _VALID_URL = [
         r'https?://(?:www\.)?castbox\.fm/episode/(?:[^/?#]*-)?id(?P<cid>\d+)-id(?P<id>\d+)',
         r'https?://(?:www\.)?castbox\.fm/app/castbox/player/id(?P<cid>\d+)/id(?P<id>\d+)',
-        r'https?://(?:www\.)?castbox\.fm/ep/(?P<id>\d+)',
+        r'https?://(?:www\.)?castbox\.fm/(?:ep|vb)/(?P<id>\d+)',
     ]
     _TESTS = [{
         'url': 'https://castbox.fm/episode/The-Layover-%E2%80%94-Abolish-Jet-Lag-id6161270-id779008359',
@@ -150,6 +150,9 @@ class CastboxIE(CastboxBaseIE):
         'only_matching': True,
     }, {
         'url': 'https://castbox.fm/ep/1027642161',
+        'only_matching': True,
+    }, {
+        'url': 'https://castbox.fm/vb/1028614314',
         'only_matching': True,
     }]
 
